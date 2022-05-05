@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <style>
+    
+    #textfont{
+      font-family: cooper;
+      
+    }
+    #button1{
+
+      font-size: 24;
+      border-radius: 20px;
+
+    }
+    #button2{
+      border-radius: 20px;
+    }
+    .panel-body{
+      background-color: white;
+    }
+   
+      .panel{
+        background-color: rgb(198, 244, 244);
+      }
+      .textarea{
+        
+        width: 100%;
+        height: auto;
+      }
+      .btn-primary{
+        margin-left: 50px;
+        font-size: 14px;
+        text-align: center;
+        width: 80%;
+        height: 40px;
+        background-color: rgb(68, 71, 255);
+      }
+      
+      body{
+        background-color: #fbcc3e;
+        
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center" >
+            <h1 id="textfont"><b><i>OpenAI &nbsp;Fellows &nbsp;IT</i></b></h1>
+            <h3><b>Job Application Form</b></h3>
+            <p>Please complete the form below to apply for a position with us.</p>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+                </br>
+                <div class="form-group">
+                  <label for="nid">NID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nid"
+                    name="nid"
+                  />
+                  </br>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                </div>
+                <div class="form-group">
+                  <label for="number">Phone Number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="number"
+                    name="number"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="education">Educational Qualification</label>
+                    <select class="form-control" name="education" id="education">
+                      <option selected hidden value="">Select degree from the list</option>
+                      <option value="HSC">HSC</option>
+                      <option value="BSC">BSC</option>
+                      <option value="MSC">MSC</option>
+                      </select>
+                 
+              </div>
+              <div class="form-group">
+                <label><b>Skills</b></label>
+                <div class="custom_select">
+                  <input type="checkbox" name="skills" value="C">&nbsp;C/C++</input>&nbsp;&nbsp;
+                  <input type="checkbox" name="skills" value="Java">&nbsp;Java</input>&nbsp;&nbsp;
+                  <input type="checkbox" name="skills" value="Python">&nbsp;Python</input>&nbsp;&nbsp;
+                  <input type="checkbox" name="skills" value="PHP">&nbsp;PHP</input>&nbsp;&nbsp;
+                  <input type="checkbox" name="skills" value="SQL">&nbsp;SQL</input>
+                </div></br>
+              <div class="form-group">
+                <label for="position">Applying for Position</label>
+                  <select class="form-control" name="position" id="position">
+                    <option selected hidden value="">Select position from the list</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Graphics Designer">Graphic Designer</option>
+                    <option value="System Analyst">System Analyst</option>
+                    </select>
+               
+            </div>
+            
+           </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              </br>
+              <div class="form-group">
+                <label for="cv">Submit your resume by providing your resume link</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cv"
+                  name="cv"
+                  required
+                />
+                </br>
+              
+              <div class="form-group">
+                <label for="address">Address</label></br>
+                 <textarea class="textarea" name="address">
+
+                 </textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="pcode">Postal Code</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="pcode"
+                  name="pcode"
+                />
+                </br>
+                
+                <div class="form-group">
+                  <label class="check">
+                    <input type="checkbox" required>
+                    <span class="checkmark">Agreed to terms and conditions</span>
+                  </label>
+                  
+               </div> 
+               
+              <div>
+              <input type="submit" value="Submit" class="btn-primary" id="button2"/>
+              
+              </div>
+              <br>
+              <div>
+                <input type="reset" value="Reset" class="btn-primary" id="button2"/>
+              </div>
+              
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Dihan</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded mr-2" alt="...">
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div> -->
+  </body>
+</html>
